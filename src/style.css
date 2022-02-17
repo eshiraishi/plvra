@@ -1,0 +1,82 @@
+:root {
+    --main-bg: #212121;
+    --main-fg: #fafafa;
+    --tile-red: #b71c1c;
+    --tile-orange: #e65100;
+    --tile-green: #1b5e20;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size: xx-large;
+    font-weight: bold;
+    color: var(--main-fg);
+    
+    text-align: center;
+}
+
+.title {
+    margin: 0.5rem;
+    height: 2.5rem;
+}
+
+body {
+    background-color: var(--main-bg);
+}
+
+.tile {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0.5rem;
+    border-radius: 15%;
+    background-color: var(--main-fg);
+    color: var(--main-bg);
+}
+
+.bg-green {
+    background-color: var(--tile-green);
+}
+
+.bg-orange {
+    background-color: var(--tile-orange);
+}
+
+.bg-red {
+    background-color: var(--tile-red);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.5rem;
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+}
+
+.app {
+    width: 20rem;
+    height: 100vh;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.guessInput {
+    background-color: var(--main-fg);
+    color: var(--main-bg);
+    margin: 0.5rem;
+    height: 2.5rem;
+}
